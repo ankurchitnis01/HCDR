@@ -1,0 +1,24 @@
+Difficulties Encountered and Solutions
+Data Challenges
+Handling Missing Values: Our datasets contained a significant amount of missing information across various features, which is a common issue in real-world data, especially in the financial sector where not all information may be disclosed by applicants.
+Solution: We employed imputation strategies where missing numeric data were replaced with the median value of each column, and missing categorical data were replaced with the mode. For columns with more than 50% missing values, we considered dropping these columns as they might not provide reliable insights.
+High Dimensionality: The datasets provided by Home Credit had a very high dimensionality with hundreds of features, which increased the complexity of our models and the computational cost.
+Solution: We used dimensionality reduction techniques, including feature selection based on the importance derived from preliminary models like Random Forest. We also used PCA in some exploratory scenarios to understand data structure better.
+
+Technical Challenges
+Class Imbalance: The target variable 'TARGET' was highly imbalanced. This is typical of default prediction datasets but poses a significant challenge for predictive modeling as it biases the model towards the majority class.
+Solution: We applied downsampling techniques to balance the dataset. This involved reducing the number of majority class samples to match the minority class, ensuring that our model did not overlook the critical minority class (defaults).
+Model Selection and Tuning: Choosing the right model and tuning hyperparameters were highly iterative and time-consuming tasks.
+Solution: We experimented with multiple algorithms, including logistic regression, decision trees, and ensemble methods like Random Forest and Gradient Boosting. Using cross-validation, we fine-tuned the hyperparameters to find the best model settings.
+
+Integration Challenges
+Merging Multiple Data Sources: The project required merging several datasets that were related to different aspects of a customer's profile, which had varying structures and sizes.
+Solution: We developed a robust preprocessing pipeline that merged datasets based on common keys and handled discrepancies in data formats and values comprehensively.
+Evaluation Challenges
+
+Model Evaluation: Assessing model performance beyond traditional accuracy, especially given the imbalanced nature of the dataset, required more nuanced metrics.
+Solution: We focused on the ROC-AUC score as our main evaluation metric, which considers both the false positive and true positive rates. This was more appropriate for our imbalanced dataset.
+
+Learning and Development Challenges
+Keeping Up with New Techniques: The field of machine learning, especially related to credit scoring, is fast-evolving, and staying updated with the latest methodologies was essential.
+Solution: Team members dedicated time each week to research and share findings on recent advancements and tools, ensuring our approach remained cutting-edge.
