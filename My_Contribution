@@ -1,0 +1,22 @@
+My Contribution
+Data Modeling and Building Predictive Models
+My primary responsibility in this project was to develop and refine predictive models that assess the likelihood of loan applicants repaying their loans. Here are the key contributions I made:
+
+1. Model Development
+Logistic Regression: Implemented the baseline model to establish a performance threshold, focusing on preprocessing, feature selection, and parameter tuning.
+Decision Tree: Built and fine-tuned to explore complex non-linear relationships, with careful consideration of tree depth and leaf size to prevent overfitting.
+Random Forest: Developed to improve upon the Decision Tree by reducing variance through multiple trees, with a focus on hyperparameter tuning.
+Gradient Boosting Machine (GBM): Spearheaded the GBM implementation, achieving significant improvements in prediction accuracy through rigorous parameter tuning and validation.
+2. Cross-Validation and Model Evaluation
+Employed K-fold cross-validation for all models to reliably assess performance and avoid overfitting. This method was crucial for validating the models' performance on unseen data.
+Tracked and compared ROC-AUC scores and accuracy metrics across models to identify the best performer under various scenarios.
+3. Reporting and Documentation
+Prepared comprehensive documentation on the model development process, including detailed descriptions of data preprocessing, model tuning strategies, and evaluation metrics.
+Presented findings and model insights to stakeholders, highlighting key risk factors influencing loan repayment identified by the models.
+4. Technical Tools Used
+Python: Utilized for all tasks related to data manipulation, model building, and evaluation.
+Pandas and NumPy: Employed for data cleaning and numerical operations.
+Scikit-learn: Used for building machine learning models, implementing K-fold cross-validation, and computing performance metrics.
+Matplotlib and Seaborn: Used for visualizing data to analyze model performance and feature importance.
+
+Through these contributions, I played a crucial role in enhancing the project by providing robust predictive models that improved accuracy and offered critical insights into loan repayment behaviors.
