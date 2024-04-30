@@ -35,6 +35,8 @@ Continuous Learning: The dynamic nature of machine learning highlighted the need
 
 ## group's solution to the business problem.
 **Business Problem:**
+**Predictive Modelling:** Home Credit can use the predictive modelling system that accurately assesses the credit risk of individuals with limited credit histories. Home Credit can use machine learning, data mining, and statistical analysis to glean insights from unconventional data. This involves collecting, preprocessing, and engineering relevant variables from large datasets, then training predictive models using algorithms like logistic regression, decision trees, random forests, or neural networks. They must also rigorously validate and fine-tune these models to ensure accuracy and fairness
+
 Many individuals struggle to secure loans due to insufficient or nonexistent credit histories. This underserved segment often falls prey to unreliable lenders. Home Credit, a financial institution, aims to expand financial inclusion for the unbanked population by providing a positive and safe borrowing experience. To improve their services, Home Credit utilizes various data sources including telecommunications and transactional information to predict their clients’ repayment abilities accurately.
 
 **Project Objective:**
