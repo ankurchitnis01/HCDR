@@ -1,0 +1,17 @@
+The Business Value of the Solution
+Home Credit Default Risk
+Can you predict how capable each applicant is of repaying a loan?
+
+Overview
+Home Credit Group aims to broaden financial inclusion for the unbanked population by providing a positive and safe borrowing experience. By utilizing various alternative data sources including telco and transactional information, Home Credit assesses their clients' repayment abilities. The challenge encourages Kagglers to unlock the full potential of Home Credit's data to ensure that clients capable of repayment are not rejected and that loans are structured in a way that sets clients up for success.
+
+Business Impact
+The ability to predict a client’s repayment ability with higher accuracy has significant business implications:
+
+Increased Loan Approvals: By more accurately assessing repayment abilities, Home Credit can approve more loans to clients who would have otherwise been rejected under traditional analysis models. This expands their market and allows more customers access to credit.
+
+Reduced Defaults: Improved prediction models lead to fewer defaults, saving the company from significant potential losses and reducing the risk of financial products.
+
+Customer Success: Providing loans with terms that align with the customer's ability to repay leads to higher customer satisfaction and lower default risks. This fosters long-term customer loyalty and improves brand reputation.
+
+Operational Efficiency: Automated, data-driven decision-making helps streamline operations, reducing the need for manual review and lowering operational costs.
