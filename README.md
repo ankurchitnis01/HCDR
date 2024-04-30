@@ -149,11 +149,13 @@ Model Tuning and Validation: Implementing cross-validation and grid search to fi
 
 **Model Evaluation**
 **ROC-AUC as a Performance Metric:** Focusing on the ROC-AUC score as a primary metric for model evaluation was particularly relevant for this project due to the imbalanced nature of the data. This was a practical lesson in selecting appropriate metrics that truly reflect the performance of a model in predicting outcomes.
+
 **Team Collaboration and Tools**
 **Collaborative Development:** The project reinforced the importance of collaboration in data science projects. Using tools like Git for version control and engaging in peer code reviews helped maintain code quality and facilitated seamless team collaboration.
 Remote Working Skills: Coordinating efforts in a virtual environment required efficient communication and project management skills, essential for modern data science teams working in distributed settings.
 
 **Industry Knowledge**
 **Credit Scoring Systems:** Learning about different aspects of credit scoring systems in the financial industry, including regulatory considerations and ethical implications, was invaluable. It provided a broader context to the technical skills applied.
+
 **Future Directions**
 **Continuous Learning:** The dynamic nature of machine learning highlighted the need for continuous learning and adaptation, especially in applying new techniques and algorithms that could improve model accuracy and efficiency.
