@@ -90,70 +90,70 @@ Through these contributions, I played a crucial role in enhancing the project by
 Home Credit Default Risk
 Can you predict how capable each applicant is of repaying a loan?
 
-Overview
+**Overview**
 Home Credit Group aims to broaden financial inclusion for the unbanked population by providing a positive and safe borrowing experience. By utilizing various alternative data sources including telco and transactional information, Home Credit assesses their clients' repayment abilities. The challenge encourages Kagglers to unlock the full potential of Home Credit's data to ensure that clients capable of repayment are not rejected and that loans are structured in a way that sets clients up for success.
 
-Business Impact
+**Business Impact**
 The ability to predict a client’s repayment ability with higher accuracy has significant business implications:
 
 Increased Loan Approvals: By more accurately assessing repayment abilities, Home Credit can approve more loans to clients who would have otherwise been rejected under traditional analysis models. This expands their market and allows more customers access to credit.
 
-Reduced Defaults: Improved prediction models lead to fewer defaults, saving the company from significant potential losses and reducing the risk of financial products.
+**Reduced Defaults:** Improved prediction models lead to fewer defaults, saving the company from significant potential losses and reducing the risk of financial products.
 
-Customer Success: Providing loans with terms that align with the customer's ability to repay leads to higher customer satisfaction and lower default risks. This fosters long-term customer loyalty and improves brand reputation.
+**Customer Success:** Providing loans with terms that align with the customer's ability to repay leads to higher customer satisfaction and lower default risks. This fosters long-term customer loyalty and improves brand reputation.
 
-Operational Efficiency: Automated, data-driven decision-making helps streamline operations, reducing the need for manual review and lowering operational costs.
+**Operational Efficiency:** Automated, data-driven decision-making helps streamline operations, reducing the need for manual review and lowering operational costs.
 
 ## Difficulties that your group encountered along the way.
 
 Difficulties Encountered and Solutions
 Data Challenges
-Handling Missing Values: Our datasets contained a significant amount of missing information across various features, which is a common issue in real-world data, especially in the financial sector where not all information may be disclosed by applicants.
+**Handling Missing Values:** Our datasets contained a significant amount of missing information across various features, which is a common issue in real-world data, especially in the financial sector where not all information may be disclosed by applicants.
 Solution: We employed imputation strategies where missing numeric data were replaced with the median value of each column, and missing categorical data were replaced with the mode. For columns with more than 50% missing values, we considered dropping these columns as they might not provide reliable insights.
-High Dimensionality: The datasets provided by Home Credit had a very high dimensionality with hundreds of features, which increased the complexity of our models and the computational cost.
+**High Dimensionality:** The datasets provided by Home Credit had a very high dimensionality with hundreds of features, which increased the complexity of our models and the computational cost.
 Solution: We used dimensionality reduction techniques, including feature selection based on the importance derived from preliminary models like Random Forest. We also used PCA in some exploratory scenarios to understand data structure better.
 
-Technical Challenges
-Class Imbalance: The target variable 'TARGET' was highly imbalanced. This is typical of default prediction datasets but poses a significant challenge for predictive modeling as it biases the model towards the majority class.
+**Technical Challenges**
+**Class Imbalance:** The target variable 'TARGET' was highly imbalanced. This is typical of default prediction datasets but poses a significant challenge for predictive modeling as it biases the model towards the majority class.
 Solution: We applied downsampling techniques to balance the dataset. This involved reducing the number of majority class samples to match the minority class, ensuring that our model did not overlook the critical minority class (defaults).
 Model Selection and Tuning: Choosing the right model and tuning hyperparameters were highly iterative and time-consuming tasks.
 Solution: We experimented with multiple algorithms, including logistic regression, decision trees, and ensemble methods like Random Forest and Gradient Boosting. Using cross-validation, we fine-tuned the hyperparameters to find the best model settings.
 
-Integration Challenges
-Merging Multiple Data Sources: The project required merging several datasets that were related to different aspects of a customer's profile, which had varying structures and sizes.
+**Integration Challenges**
+**Merging Multiple Data Sources:** The project required merging several datasets that were related to different aspects of a customer's profile, which had varying structures and sizes.
 Solution: We developed a robust preprocessing pipeline that merged datasets based on common keys and handled discrepancies in data formats and values comprehensively.
 Evaluation Challenges
 
-Model Evaluation: Assessing model performance beyond traditional accuracy, especially given the imbalanced nature of the dataset, required more nuanced metrics.
-Solution: We focused on the ROC-AUC score as our main evaluation metric, which considers both the false positive and true positive rates. This was more appropriate for our imbalanced dataset.
+**Model Evaluation:** Assessing model performance beyond traditional accuracy, especially given the imbalanced nature of the dataset, required more nuanced metrics.
+**Solution:** We focused on the ROC-AUC score as our main evaluation metric, which considers both the false positive and true positive rates. This was more appropriate for our imbalanced dataset.
 
-Learning and Development Challenges
-Keeping Up with New Techniques: The field of machine learning, especially related to credit scoring, is fast-evolving, and staying updated with the latest methodologies was essential.
-Solution: Team members dedicated time each week to research and share findings on recent advancements and tools, ensuring our approach remained cutting-edge.
+**Learning and Development Challenges**
+**Keeping Up with New Techniques:** The field of machine learning, especially related to credit scoring, is fast-evolving, and staying updated with the latest methodologies was essential.
+**Solution:** Team members dedicated time each week to research and share findings on recent advancements and tools, ensuring our approach remained cutting-edge.
 
-##  What you learned in the project.
+##  What I learned in the project.
 
-Learning Outcomes from the Home Credit Default Risk Project
+**Learning Outcomes from the Home Credit Default Risk Project**
 
-Understanding Financial Data
+**Understanding Financial Data**
 Insights into Credit Risk: Working with Home Credit's comprehensive datasets provided deep insights into the factors influencing credit risk. Analyzing variables like income, loan amount, previous credit history, and external sources of credit data helped understand the risk profiles of different customer segments.
 
-Data Preprocessing Techniques
-Advanced Data Cleaning: Handling missing values and discrepancies in data formats across multiple datasets was crucial. Learning to effectively clean and prepare data for modeling was a significant takeaway, especially in financial datasets where precision is paramount.
+**Data Preprocessing Techniques**
+**Advanced Data Cleaning:** Handling missing values and discrepancies in data formats across multiple datasets was crucial. Learning to effectively clean and prepare data for modeling was a significant takeaway, especially in financial datasets where precision is paramount.
 Feature Engineering: The project underscored the importance of deriving new variables that can provide additional predictive power beyond the raw data provided. For instance, creating features from aggregated statistics and derived ratios (like income to loan amount) enhanced our models' ability to differentiate between defaulters and non-defaulters.
 
-Machine Learning Models
-Exploring Various Models: The project was an excellent opportunity to apply and compare multiple machine learning techniques. Logistic regression, decision trees, random forests, and gradient boosting machines were explored, each offering unique insights and challenges.
+**Machine Learning Models**
+**Exploring Various Models:** The project was an excellent opportunity to apply and compare multiple machine learning techniques. Logistic regression, decision trees, random forests, and gradient boosting machines were explored, each offering unique insights and challenges.
 Handling Imbalanced Data: Learning to use techniques such as downsampling to manage the class imbalance inherent in default prediction helped in understanding how to train more robust and fair models.
 Model Tuning and Validation: Implementing cross-validation and grid search to fine-tune model parameters was critical. This practice helped in understanding how to optimize models effectively to achieve the best performance.
 
-Model Evaluation
-ROC-AUC as a Performance Metric: Focusing on the ROC-AUC score as a primary metric for model evaluation was particularly relevant for this project due to the imbalanced nature of the data. This was a practical lesson in selecting appropriate metrics that truly reflect the performance of a model in predicting outcomes.
-Team Collaboration and Tools
-Collaborative Development: The project reinforced the importance of collaboration in data science projects. Using tools like Git for version control and engaging in peer code reviews helped maintain code quality and facilitated seamless team collaboration.
+**Model Evaluation**
+**ROC-AUC as a Performance Metric:** Focusing on the ROC-AUC score as a primary metric for model evaluation was particularly relevant for this project due to the imbalanced nature of the data. This was a practical lesson in selecting appropriate metrics that truly reflect the performance of a model in predicting outcomes.
+**Team Collaboration and Tools**
+**Collaborative Development:** The project reinforced the importance of collaboration in data science projects. Using tools like Git for version control and engaging in peer code reviews helped maintain code quality and facilitated seamless team collaboration.
 Remote Working Skills: Coordinating efforts in a virtual environment required efficient communication and project management skills, essential for modern data science teams working in distributed settings.
 
-Industry Knowledge
-Credit Scoring Systems: Learning about different aspects of credit scoring systems in the financial industry, including regulatory considerations and ethical implications, was invaluable. It provided a broader context to the technical skills applied.
-Future Directions
-Continuous Learning: The dynamic nature of machine learning highlighted the need for continuous learning and adaptation, especially in applying new techniques and algorithms that could improve model accuracy and efficiency.
+**Industry Knowledge**
+**Credit Scoring Systems:** Learning about different aspects of credit scoring systems in the financial industry, including regulatory considerations and ethical implications, was invaluable. It provided a broader context to the technical skills applied.
+**Future Directions**
+**Continuous Learning:** The dynamic nature of machine learning highlighted the need for continuous learning and adaptation, especially in applying new techniques and algorithms that could improve model accuracy and efficiency.
