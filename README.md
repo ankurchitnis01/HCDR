@@ -35,6 +35,7 @@ Continuous Learning: The dynamic nature of machine learning highlighted the need
 
 ## group's solution to the business problem.
 **Business Problem:**
+
 **Predictive Modelling:** Home Credit can use the predictive modelling system that accurately assesses the credit risk of individuals with limited credit histories. Home Credit can use machine learning, data mining, and statistical analysis to glean insights from unconventional data. This involves collecting, preprocessing, and engineering relevant variables from large datasets, then training predictive models using algorithms like logistic regression, decision trees, random forests, or neural networks. They must also rigorously validate and fine-tune these models to ensure accuracy and fairness
 
 Many individuals struggle to secure loans due to insufficient or nonexistent credit histories. This underserved segment often falls prey to unreliable lenders. Home Credit, a financial institution, aims to expand financial inclusion for the unbanked population by providing a positive and safe borrowing experience. To improve their services, Home Credit utilizes various data sources including telecommunications and transactional information to predict their clients’ repayment abilities accurately.
@@ -52,7 +53,11 @@ Project Overview This project aims to predict the ability of loan applicants to 
 
 **Handling Missing Data:** Identified and imputed missing values. Columns with more than 50% missing values were dropped. Feature Encoding: Applied label encoding to categorical variables to convert them into a machine-readable form. Feature Scaling: Standardized numerical features to have a mean of zero and a standard deviation of one. Model Building Several models were built to predict the target variable:
 
-**Logistic Regression:** Provided a baseline for performance with an ROC-AUC of 0.60. Decision Tree: Demonstrated overfitting with an ROC-AUC similar to Logistic Regression. Random Forest: Improved prediction with an ROC-AUC of 0.71. Gradient Boosting Machine (GBM): Achieved the best performance with an ROC-AUC of 0.75. Evaluation Models were evaluated based on accuracy and ROC-AUC scores. The Gradient Boosting Machine model showed the highest potential and was chosen for final predictions.
+**Logistic Regression:** Provided a baseline for performance with an ROC-AUC of 0.60. 
+**Decision Tree:** Demonstrated overfitting with an ROC-AUC similar to Logistic Regression. 
+**Random Forest:** Improved prediction with an ROC-AUC of 0.71. 
+**Gradient Boosting Machine (GBM):** Achieved the best performance with an ROC-AUC of 0.75. 
+Evaluation Models were evaluated based on accuracy and ROC-AUC scores. The Gradient Boosting Machine model showed the highest potential and was chosen for final predictions.
 
 Results and Conclusion The GBM model highlighted key predictors of default, such as EXT_SOURCE_2, EXT_SOURCE_3, and DAYS_BIRTH. Its performance was robust, making it suitable for deployment to predict loan repayment probabilities.
 
